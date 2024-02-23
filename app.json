@@ -6,27 +6,38 @@
   "success_url": "/",
 
   "env": {
-    "BOT_NUMBER": {
+    "OWNER": {
       "description": "Put the number here.",
       "required": true
     },  
-
-    "PASSWORD": {
-      "description": "Enter a password of your choice here",
-      "required": true
-    },
 
     "SESSION_ID": {
       "description": "Enter session-id here",
       "required": false
     },
+
+  
+
+    "PREFIX": {
+      "description": "Bot prefix (.,/,@)",
+      "required": false
+ },
+
+
+
+    "LOGO": {
+      "description": "Bot logo",
+      "required": false
+ },
+
     
-    "GITHUB_USERNAME": {
-      "description": "Put your github username here.",
+    
+    "ONLY_GROUP": {
+      "description": "Work on only groups",
       "required": true
     },
-    "GITHUB_AUTH_TOKEN": {
-      "description": "Put your github auth-token here.",
+    "ALIVE": {
+      "description": "Put your alive message.",
       "required": true
     }   
 },
