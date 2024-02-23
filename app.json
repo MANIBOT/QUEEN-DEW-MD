@@ -1,10 +1,10 @@
 {
   "name": "DEW-QUEEN-MD",
   "description": "A Whatsapp md bot built in NodeJs to make experience better",
+  "repository": "https://github.com/sadasofc/QUEEN-DEW-MD",
   "logo": "https://camo.githubusercontent.com/14279dac3151a95fca8ec5bebda435d68d62c49f6aa4f30749f541ee985ad21b/68747470733a2f2f7365636b746f7275736572626f742e6f6e72656e6465722e636f6d2f6d61696e2e6a7067",
   "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "QUEENDEW", "Secktor","dewqueen","theme bot","multi device","baileys","saviya"],
-  "success_url": "/",
-  "stack": "node.js",
+
 "env": {
   "OWNER_NAME": {
   "description": "Name of Bot Owner",
