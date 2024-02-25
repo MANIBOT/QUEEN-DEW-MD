@@ -36,6 +36,13 @@
       "description": "Work on only groups",
       "required": true
     },
+
+
+    "ONLY_ME": {
+      "description": "Work on only You",
+      "required": true
+    },
+    
     "ALIVE": {
       "description": "Put your alive message.",
       "required": true
