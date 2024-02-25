@@ -14,3 +14,7 @@
 [![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://https://github.com/sadasofc/QUEEN-DEW-MD&template=https://github.com/sadasofc/QUEEN-DEW-MD.git)
 
 
+## BLACK KINDOM TEAM🙇‍♂️
+
+<a href="https://github.com/saviya55"><img src="https://telegra.ph/file/3a1710877f67bb813cc9a.jpg" width=90 height=90></a>
+**[ SAVIYA MD](https://github.com/saviya55)**</br>Main Developer</br> | **[SAVITHU IDUWARA]
