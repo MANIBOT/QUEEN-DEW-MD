@@ -20,5 +20,4 @@
 
 ## BLACK KINDOM TEAM🙇‍♂️
 
-
-
+**[SAVIYA MD](https://github.com/saviya55)**</br>Founder & Developer🥷</br>  **[SADAS OFC](https://github.com/sadasofcl)**</br>CO- Owner & CO-Coder🙇‍♂️</br>  **[MANIYA OFC](https://github.com/MANIBOT)**</br> Beta Tester✨</br> 
