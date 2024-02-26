@@ -19,7 +19,9 @@
 </p>
 
 
-**`DEPLOY METHODS🕊️ `**
+
+ **`DEPLOYMENT METHODS`**
+
 
 
 
