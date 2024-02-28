@@ -20,7 +20,7 @@ async function Insta(match) {
 
 cmd({
         pattern: "ig",
-        react: "💦",
+        react: "🎀",
         desc: "send instragram url🕊️.",
         category: "downloader",
         filename: __filename
