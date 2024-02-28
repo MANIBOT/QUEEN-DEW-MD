@@ -25,7 +25,7 @@ cmd({
         filename: __filename
     },
     async(conn, mek, m,{from, q}) => {
-if(!q) return m.reply('Send Instragram link💦.')
+if(!q) return m.reply('Send Instragram link 💦.')
 let response = await Insta(q)
 for (let i=0;i<response.length;i++) {
 await conn.sendFileUrl(from, response[i], `*Downloaded Media from instagram.*`, mek)
