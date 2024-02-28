@@ -20,7 +20,7 @@ async function Insta(match) {
 
 cmd({
         pattern: "insta",
-        desc: "download instagram post.",
+        desc: "send instragram url🕊️.",
         category: "downloader",
         filename: __filename
     },
