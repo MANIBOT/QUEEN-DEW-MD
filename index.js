@@ -19,7 +19,7 @@ const config = require('./config')
 const qrcode = require('qrcode-terminal')
 const util = require('util')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('./lib/functions')
-const { sms,downloadMediaMessage } = require('./lib/msg')
+const { sms,downloadMediaMessage } = require('./lib')
 const axios = require('axios');
 const cheerio = require('cheerio');
 
