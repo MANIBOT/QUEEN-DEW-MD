@@ -213,7 +213,7 @@ l(e)
 
 cmd({
     pattern: "menu",
-    react: "👾",
+    react: "📂",
     alias: ["panel","list","commands"],
     desc: "Get bot\'s command list.",
     category: "main",
