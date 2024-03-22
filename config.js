@@ -13,5 +13,5 @@ ALIVE: process.env.ALIVE === undefined ? `Hello im alive now !!` : process.env.A
 OWNER: process.env.OWNER === undefined ? `94725881990` : process.env.OWNER,
 PREFIX: process.env.PREFIX === undefined ? '@' : process.env.PREFIX,
 FOOTER: process.env.FOOTER=== undefined ? '‌ꜱᴀᴄʜɪʙᴏᴛ': process.env.FOOTER,
-LOGO: process.env.LOGO === undefined ? `https://i.ibb.co/x3rh1ZF/newsbot.png` : process.env.LOGO
+LOGO: process.env.LOGO === undefined ? `https://telegra.ph/file/f25fa1b13e9962f2c2271.jpg` : process.env.LOGO
 };
