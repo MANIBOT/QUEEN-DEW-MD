@@ -4,7 +4,6 @@ const { cmd } = require('../command')
 cmd({
             pattern: "tts",
             react: "💭"
-            desc: "text to speech.",
             category: "downloader",
             filename: __filename,
             use: '<Hii,this is Secktor>',
