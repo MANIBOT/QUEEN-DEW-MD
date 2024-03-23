@@ -323,14 +323,8 @@ cmd({
     async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
-    async(mek, m, q) => {
-        m.reply(`*Check your Pm ${tlang().greet}*`);
-        await mek.sendMessage(`${m.sender}`, {
-            image: log0,
-            caption: `*Group Name: Queendewmd-Support*\n*Group Link:* https://chat.whatsapp.com/F4yX2YfAF14GzF3xwey848`,
-        });
-
-    }
+            const tes = `*🥷𝘘𝘜𝘌𝘌𝘕 𝘋𝘌𝘞 𝘔𝘋 𝘚𝘜𝘗𝘗𝘖𝘙𝘛🥷* *Group Link:* https://chat.whatsapp.com/F4yX2YfAF14GzF3xwey848`
+        await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek, messageId:genMsgId() })
 
   } catch (e) {
 reply('*Error !!*')
