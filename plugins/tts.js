@@ -18,8 +18,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
                 lang: "en",
                 slow: false,
                 host: "https://translate.google.com",
-            },
-              return mek.sendMessage(m.chat, {
+            },return mek.sendMessage(m.chat, {
                 audio: {
                     url: ttsurl,
                 },
