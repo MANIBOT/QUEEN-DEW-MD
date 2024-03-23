@@ -1,7 +1,7 @@
 const { cmd } = require('../command')
 
 
-cmd(
+cmd({
             pattern: "tts",
             react: "💭" ,
            category: "downloader",
@@ -22,7 +22,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
                 audio: {
                     url: ttsurl,
                 },
-            }, {
+            
                 quoted: m,
-            ).
+            )};
         
