@@ -22,7 +22,6 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
                 audio: {
                     url: ttsurl,
                 },
-                fileName: `ttsmmek.m4a`,
             }, {
                 quoted: m,
             });
