@@ -33,6 +33,11 @@ const txt = `${mg.systemhead}
 |▫️ Ram : ${ram}                        
 |▫️ Mode : ${mg.mode}                       
 ────────────────────`
+
+async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
+
+    
 await conn.sendMsg(m.chat, { text:txt }, { quoted: mek })
 } catch (e) {
 reply('Error !!')
