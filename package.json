@@ -19,7 +19,7 @@
 "mfiredlcore-vihangayt": "^1.0.0",
 "path": "^0.12.7",
 "ytdl-secktor": "latest",
-"yts-secktor"
+"yts-secktor": {
 "node-fetch": "^2.6.1" ,
 "megajs": "^1.1.0",
 "vm": "^0.1.0",
