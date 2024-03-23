@@ -304,9 +304,24 @@ const tes = `┌─────────────────────�
 ├ 🎲 *Ram usage:-*  ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ├ *🖥️Owners:-* *Sadas Ofc And Saviya Md*
 ├ *Platform:-*  ${hostname}
-├🕹️ *Version:-* 1.0.1
+├🕹️ *Version:-* 1.0.0
 └───────────────────────`
 
+    if (os.hostname().length == 12) {
+  hostname = 'Replit'
+} else {
+  if (os.hostname().length == 36) {
+    hostname = 'Heroku'
+} else {
+    if (os.hostname().length == 8) {
+      hostname = 'Koyeb'
+} else {
+        if(os.hostname().includes('codespace'){
+    hostname = 'Codespace'
+        }else{
+      hostname = os.hostname()
+        }
+}}}
       
 await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek, messageId:genMsgId() })
 } catch (e) {
