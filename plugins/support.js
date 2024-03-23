@@ -18,7 +18,6 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
         });
 
     }
-)
 
   } catch (e) {
 reply('*Error !!*')
