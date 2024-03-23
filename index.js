@@ -129,7 +129,14 @@ require("./plugins/" + plugin);
 });
 console.log('Plugins installed ✅')
 console.log('Bot connected ✅')
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { text: `News Bot Connected /n fk` } ,{messageId:genMsgId()} )    
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { text: `*👸Queen Dew Md Successfuly Connected.*
+
+*🕵️‍♂️Version - 1.0.1*
+*🕵️‍♂️Owner - Sadas Ofc & Saviya Md*
+
+ ```⭐A newly developed bot may have bot problems for some time. They will be resolved by us as soon as possible. Thank you for following our terms and conditions.```
+
+*🫧Our Chanal -* *https://whatsapp.com/channel/0029VaXEvFILo4hgWlIYzr1c*` } ,{messageId:genMsgId()} )    
 sleep(5000)
 
  
