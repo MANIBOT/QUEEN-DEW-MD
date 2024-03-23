@@ -22,7 +22,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
                 audio: {
                     url: ttsurl,
                 },
-                mimetype: "audio/mpeg",
+                mimetype: `audio/mpeg`,
                 fileName: `ttsmmek.m4a`,
             }, {
                 quoted: m,
