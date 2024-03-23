@@ -306,7 +306,7 @@ const tes = `┌─────────────────────�
 └───────────────────────`
 
       
-await conn.sendMessage(from, { image: { url: config.L }, caption: tes }, { quoted: mek, messageId:genMsgId() })
+await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek, messageId:genMsgId() })
 } catch (e) {
 reply('*Error !!*')
 l(e)
