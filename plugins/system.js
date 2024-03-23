@@ -44,7 +44,7 @@ if (os.hostname().length == 12) {
 } else {
         if(os.hostname().includes('codespace')
     hostname = 'Codespace'
-        }else{
+        } else {
       hostname = os.hostname()
         }
 }}}
