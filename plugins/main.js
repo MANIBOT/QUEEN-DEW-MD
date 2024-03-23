@@ -285,3 +285,24 @@ reply('*Error !!*')
 l(e)
 }
 })
+
+cmd({
+    pattern: "system",
+    react: "💦",
+    alias: ["device","ofcc","truth"],
+    desc: "Get bot\'s system..",
+    category: "main",
+    use: '.system',
+    filename: __filename
+},
+async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
+    try{
+let menumg = `Hi bro`
+
+      
+} catch (e) {
+reply('*Error !!*')
+l(e)
+}
+})
