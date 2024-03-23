@@ -298,7 +298,12 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
-const tes = `hii`
+const tes = `┌───────────────────────
+├ 🧬 *Uptime:-*  ${runtime(process.uptime())}
+├ 🎲 *Ram usage:-*  ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+├ *🖥️Owners:-* *Sadas Ofc And Saviya Md*
+├ 🕹️ *Version:-* 1.0.1
+└───────────────────────`
 
       
 await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek, messageId:genMsgId() })
