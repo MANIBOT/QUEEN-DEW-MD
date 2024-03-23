@@ -7,7 +7,7 @@ cmd({
            category: "downloader",
             filename: __filename,
             use: '<Hii,this is Secktor>',
-       })
+       });
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
