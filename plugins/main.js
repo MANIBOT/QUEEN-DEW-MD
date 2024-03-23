@@ -301,6 +301,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
 let menumg = `Hi bro`
 
       
+await conn.sendMessage(from, { image: { url: config.LOGO }, caption: systemmg }, { quoted: mek, messageId:genMsgId() })
 } catch (e) {
 reply('*Error !!*')
 l(e)
