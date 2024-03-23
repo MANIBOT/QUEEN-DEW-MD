@@ -298,22 +298,6 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
 
-  if (os.hostname().length == 12) {
-  hostname = 'Replit'
-} else {
-  if (os.hostname().length == 36) {
-    hostname = 'Heroku'
-} else {
-    if (os.hostname().length == 8) {
-      hostname = 'Koyeb'
-} else {
-        if(os.hostname().includes('codespace'){
-    hostname = 'Codespace'
-        }else{
-      hostname = os.hostname()
-        }
-}}}
-  
   try{
 const tes = `┌───────────────────────
 ├ 🧬 *Uptime:-*  ${runtime(process.uptime())}
