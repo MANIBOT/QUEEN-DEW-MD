@@ -17,7 +17,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
             const ttsurl = googleTTS.getAudioUrl(qtts, {
                 lang: "en",
                 slow: false,
-                host: "https://translate.google.com" },
+                host: "https://translate.google.com",
              return mek.sendMessage(m.chat, {
                 audio: {
                     url: ttsurl,
