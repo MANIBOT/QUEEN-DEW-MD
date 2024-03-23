@@ -297,12 +297,29 @@ cmd({
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
-    try{
+
+  if (os.hostname().length == 12) {
+  hostname = 'Replit'
+} else {
+  if (os.hostname().length == 36) {
+    hostname = 'Heroku'
+} else {
+    if (os.hostname().length == 8) {
+      hostname = 'Koyeb'
+} else {
+        if(os.hostname().includes('codespace'){
+    hostname = 'Codespace'
+        }else{
+      hostname = os.hostname()
+        }
+}}}
+  
+  try{
 const tes = `┌───────────────────────
 ├ 🧬 *Uptime:-*  ${runtime(process.uptime())}
 ├ 🎲 *Ram usage:-*  ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ├ *🖥️Owners:-* *Sadas Ofc And Saviya Md*
-├ *Platform:-* $
+├ *Platform:-*  ${hostname}
 ├🕹️ *Version:-* 1.0.1
 └───────────────────────`
 
