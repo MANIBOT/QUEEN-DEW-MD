@@ -15,6 +15,7 @@
 "cheerio": "^1.0.0-rc.12",
 "@bochilteam/scraper": "^4.0.22-alpha.0",
 "fs-extra": "^11.1.0",
+"google-tts-api": "^2.0.2",
 "api-dylux": "latest",
 "mfiredlcore-vihangayt": "^1.0.0",
 "path": "^0.12.7",
