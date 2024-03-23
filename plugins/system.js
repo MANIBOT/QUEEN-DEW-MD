@@ -42,10 +42,7 @@ if (os.hostname().length == 12) {
     if (os.hostname().length == 8) {
       hostname = 'Koyeb'
 } else {
-        if(os.hostname().includes('codespace')
-    hostname = 'Codespace'
-        } else {
-      hostname = os.hostname()
+  
         }
 }}}
 
