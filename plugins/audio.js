@@ -1,3 +1,19 @@
+const config = require('../config')
+const { cmd, commands } = require('../command')
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
+function genMsgId() {
+  const prefix = "3EB";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let randomText = prefix;
+
+  for (let i = prefix.length; i < 22; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    randomText += characters.charAt(randomIndex);
+  }
+
+  return randomText;
+}
+
 cmd({
         pattern: "bass",
         desc: "adds bass in given sound",
@@ -5,6 +21,10 @@ cmd({
         use: '<reply to any audio>',
         react:"😎",
     },
+
+    async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
+            
     async(Void, citel) => {
         let mime = citel.quoted.mtype
         let set = "-af equalizer=f=54:width_type=o:width=2:g=20";
