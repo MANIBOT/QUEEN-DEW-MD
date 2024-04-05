@@ -129,7 +129,7 @@ require("./plugins/" + plugin);
 });
 console.log('Plugins installed ✅')
 console.log('Bot connected ✅')
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { text: `News Bot Connected /n fk` } ,{messageId:genMsgId()} )    
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { text: `Queen Dew Md Connected Successfuly•` } ,{messageId:genMsgId()} )    
 sleep(5000)
 
  
