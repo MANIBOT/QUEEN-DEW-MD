@@ -267,12 +267,12 @@ if(!commands[i].dontAddCommandList){
 let menumg = `*Hellow👸* ${pushname}
 
 *╭─     ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ*
-*│🕵️‍♂️𝘙𝘶𝘯 𝘛𝘪𝘮𝘦 -* ${runtime(process.uptime())} 
-*│🕵️‍♂️𝘙𝘢𝘮 𝘜𝘴𝘦 -* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+*│🕵️‍♂️ 𝘙𝘶𝘯 𝘛𝘪𝘮𝘦 -* ${runtime(process.uptime())} 
+*│🕵️‍♂️ 𝘙𝘢𝘮 𝘜𝘴𝘦 -* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 *╰──────────●●►*
 *👸 𝘘𝘶𝘦𝘦𝘯 𝘋𝘦𝘸 𝘔𝘥 𝘊𝘰𝘮𝘮𝘢𝘮𝘥 𝘗𝘢𝘯𝘦𝘭*
 *╭──────────●●►*
-*│🧙‍♂️MAIN COMMANDS*
+*│🧙‍♂️ MAIN COMMANDS*
 *│   ───────*
 
 ${menuc2}*╰───────────●●►*
@@ -302,7 +302,7 @@ if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
 const tes = `┌───────────────────────
 ├ 🧬 *Uptime:-*  ${runtime(process.uptime())}
 ├ 🎲 *Ram usage:-*  ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-├ *🖥️Owners:-* *Darkmax Team*
+├ 🖥️ *Owners:-* *Darkmax Team*
 ├🕹️ *Version:-* 1.0.0
 └───────────────────────`
 
