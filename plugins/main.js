@@ -1,7 +1,18 @@
 const config = require('../config')
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
-  
+ function genMsgId() {
+  const prefix = "3EB";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let randomText = prefix;
+
+  for (let i = prefix.length; i < 22; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    randomText += characters.charAt(randomIndex);
+  }
+
+  return randomText;
+} 
 cmd({
     pattern: "alive",
     react: "👾",
@@ -19,7 +30,7 @@ const tes = `${config.ALIVE}
 await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek  ,messageId:genMsgId() })
 
 } catch (e) {
-reply('*Error !!*')
+reply('*Error !!*\n\n' + e)
 l(e)
 }
 })
