@@ -160,12 +160,14 @@ const botNumber = conn.user.id.split(':')[0]
 const pushname = mek.pushName || 'No Name'
 const sachintha = '94725881990'
 const isSachintha = sachintha?.includes(senderNumber)
-const savi = '94743548986'
+const savi = '94722617699'
 const isSavi = savi?.includes(senderNumber)
 const sadas = '94787318729'
 const isSadas = sadas?.includes(senderNumber)
 const mani = '94714906887'
 const isMani = mani?.includes(senderNumber)
+const yasiya = '94743548986'
+const isYasi = mani?.includes(senderNumber)
 const isMe = botNumber?.includes(senderNumber)	
 const isOwner = ownerNumber?.includes(senderNumber) 
 const botNumber2 = await jidNormalizedUser(conn.user.id);
@@ -220,6 +222,11 @@ await conn.sendMessage(from, { react: { text: '🎀', key: mek.key } });
 	}else if(isOwner){
     if(!isreaction){
   await conn.sendMessage(from, { react: { text: '✨', key: mek.key } });
+    }
+	}
+	}else if(isYasi){
+    if(!isreaction){
+  await conn.sendMessage(from, { react: { text: '💃🏼', key: mek.key } });
     }
 	}
 
