@@ -1,18 +1,7 @@
 const config = require('../config')
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
-function genMsgId() {
-  const prefix = "3EB";
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  let randomText = prefix;
-
-  for (let i = prefix.length; i < 22; i++) {
-    const randomIndex = Math.floor(Math.random() * characters.length);
-    randomText += characters.charAt(randomIndex);
-  }
-
-  return randomText;
-}
+  
 cmd({
     pattern: "alive",
     react: "👾",
@@ -23,7 +12,6 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
 const tes = `${config.ALIVE}
 
@@ -79,7 +67,6 @@ cmd({
             use: '<quote|reply|number>',
         },
               async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
                  try {     if (!m.isGroup) return reply(`only for groups`);
             if (!isBotAdmins) return reply(`I can't do that. give group admin`);
 
@@ -101,7 +88,6 @@ cmd({
   use: '<quote|reply|number>',
 },           
     async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
    try {
        if (!m.isGroup) return reply(`only for groups`);
   if (!isBotAdmins) return reply(`I can't do that. give group admin`);
@@ -125,7 +111,6 @@ cmd({
             use: '<text>',
         },
       async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isSachintha, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
    try { if (!m.isGroup) return reply(tlang().group);
        if (!m.isGroup) return reply(`only for groups`);
             conn.sendMessage(m.chat, {
@@ -148,7 +133,6 @@ cmd({
             use: '<number>',
         },
          async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
    try {
       
        if (!m.isGroup) return reply(`only for groups`);
@@ -173,7 +157,6 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
 var inital = new Date().getTime();
 let ping = await conn.sendMessage(from , { text: '```Pinging!!!```'  }, { quoted: mek, messageId:genMsgId() } )
@@ -196,7 +179,6 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isSachintha, isSavi, isSadas, isMani, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
     const key = {
                     remoteJid: m.chat,
@@ -221,7 +203,6 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
     let menuc1 = ``
 for (let i=0;i<commands.length;i++) { 
@@ -296,7 +277,6 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
 
   try{
 const tes = `┌───────────────────────
@@ -322,7 +302,6 @@ cmd({
         filename: __filename,
     },
     async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname,  isSachintha, isSavi, isSadas, isMani, isMe,isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-if(!isOwner && !isSachintha && !isSavi && !isSadas && !isMani && !isMe)return;
     try{
             const tes = `*🥷𝘘𝘜𝘌𝘌𝘕 𝘋𝘌𝘞 𝘔𝘋 𝘚𝘜𝘗𝘗𝘖𝘙𝘛🥷* *Group Link:* https://chat.whatsapp.com/F4yX2YfAF14GzF3xwey848`
         await conn.sendMessage(from, { image: { url: config.LOGO }, caption: tes }, { quoted: mek, messageId:genMsgId() })
