@@ -211,7 +211,7 @@ await conn.sendMessage(from, { react: { text: '🦸‍♂️', key: mek.key } })
   }
 } else	if(isSadas){
   if(!isreaction){
-await conn.sendMessage(from, { react: { text: '🥷', key: mek.key } });
+await conn.sendMessage(from, { react: { text: '🦹‍♂️', key: mek.key } });
   }
 } else	if(isMani){
   if(!isreaction){
