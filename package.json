@@ -5,7 +5,7 @@
 "restart": "pm2 restart wabot"
 },
 "dependencies": {
-"@whiskeysockets/baileys": "6.6.0",
+"@whiskeysockets/baileys": "latest",
 "pino": "^7.0.5",
 "pm2": "^5.3.1",
 "util": "^0.12.4",
@@ -19,7 +19,7 @@
 "mfiredlcore-vihangayt": "^1.0.0",
 "path": "^0.12.7",
 "youtubedl-core": "^4.11.4",
-"ytdl-secktor": "latest",
+"ytdl-core": "latest",
 "node-fetch": "^2.6.1" ,
 "megajs": "1.1.0",
 "vm": "^0.1.0",
