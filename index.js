@@ -223,7 +223,6 @@ await conn.sendMessage(from, { react: { text: '🎀', key: mek.key } });
     if(!isreaction){
   await conn.sendMessage(from, { react: { text: '✨', key: mek.key } });
     }
-	}
 	}else if(isYasi){
     if(!isreaction){
   await conn.sendMessage(from, { react: { text: '💃🏼', key: mek.key } });
