@@ -1,4 +1,5 @@
 const { cmd } = require('../command')
+const googleTTS = require("google-tts-api");
 
 
 cmd({
