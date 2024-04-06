@@ -31,8 +31,3 @@
 
 
 
-
-## BLACK KINDOM TEAM🙇‍♂️
- | <a href=" "><img src="https://telegra.ph/file/8f9019ef53e4d3d1242a1.jpg" width=80 height=80></a> | <a href=" "><img src="https://telegra.ph/file/41a6d99409b1e412a7bef.jpg" width=80 height=80></a> |
-|---|---|---|
-|  **[SADAS OFC](https://github.com/sadasofc)**</br>Co-Admin/Developer | **[MANIYA OFC](https://github.com/MANIBOT)**</br>Beta Tester 
