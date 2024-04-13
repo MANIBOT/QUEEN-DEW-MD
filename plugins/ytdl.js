@@ -56,7 +56,7 @@ if (!q) return reply('*Please give me quary to download*')
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `_*VIDEO-DOWN*_
+const cap = `_*⬇️QUEEN DEW VIDEO DOWNLOADER⬇️*_
 
 *📃 Title:* ${anu.title}
 *📺 Views:* ${anu.views}
@@ -96,7 +96,7 @@ if (!q) return reply('*Please give me quary to download*')
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `_*SONG-DOWN*_
+const cap = `_*⬇️QUEEN DEW AUDIO DOWNLOADER⬇️*_
 
 *📃 Title:* ${anu.title}
 *📺 Views:* ${anu.views}
