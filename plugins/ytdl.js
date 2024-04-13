@@ -105,7 +105,7 @@ const cap = `_*⬇️QUEEN DEW AUDIO DOWNLOADER⬇️*_
 await conn.sendMessage(from, { image: { url: anu.thumbnail }, caption: cap}, { quoted: mek })
 let infoYt = await ytdl.getInfo(anu.url);
 if (infoYt.videoDetails.lengthSeconds >= videotime) {
-    reply(`❌ I can't download that long video!`);
+    reply("❌ ```Unable to upload this file according to your Platform Upload Size```❗ \n\n *_Please update your MAX_SIZE var on the Upload Size on your platform_* ❗🧑‍💻");
     return;
 }
 let titleYt = infoYt.videoDetails.title;
@@ -123,18 +123,16 @@ let stats = fs.statSync(`./${randomName}`);
 let fileSizeInBytes = stats.size;
 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
 if (fileSizeInMegabytes <= config.MAX_SIZE) {
-    let senda =  await conn.sendMessage(from, { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg', fileName: titleYt + '.mp3',caption: '' }, { quoted: mek })
-    await conn.sendMessage(from, { react: { text: '🎼', key: senda.key }})
-    let sendaE =  await conn.sendMessage(from, { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg', fileName:  `${titleYt}.mp3` }, { quoted: mek })
-    await conn.sendMessage(from, { react: { text: '🎼', key: sendaE.key }})
-await conn.sendMessage(from, { react: { text: '✅', key: mek.key }})
+    let sendaE = await conn.sendMessage(from, { document : fs.readFileSync(`./${randomName}`)  ,caption: anu.title ,mimetype: 'audio/mpeg', fileName: `${titleYt}.mp3` }, { quoted: mek })
+    await conn.sendMessage(from, { react: { text: '📁', key: sendaE.key }})
+await conn.sendMessage(from, { react: { text: '✔️', key: mek.key }})
 return fs.unlinkSync(`./${randomName}`);
 } else {
-reply("Erro !");
+reply(lang.SIZE);
 }
 fs.unlinkSync(`./${randomName}`);
 } catch (e) {
-  reply("*Not Found !*")
+  reply("🚫 *Request incompleted !* ```EROR:YTDL```\n\n 🔄 *_Solution - Try Again Little Movement_* 🧑‍💻")
   l(e)
 }
 })
