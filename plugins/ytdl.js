@@ -122,7 +122,7 @@ await new Promise((resolve, reject) => {
 let stats = fs.statSync(`./${randomName}`);
 let fileSizeInBytes = stats.size;
 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
-if (fileSizeInMegabytes <= config.MAX_SIZE) {
+if (fileSizeInMegabytes >= config.MAX_SIZE) {
     let sendaE = await conn.sendMessage(from, { document : fs.readFileSync(`./${randomName}`)  ,caption: anu.title ,mimetype: 'audio/mpeg', fileName: `${titleYt}.mp3` }, { quoted: mek })
     await conn.sendMessage(from, { react: { text: '📁', key: sendaE.key }})
 await conn.sendMessage(from, { react: { text: '✔️', key: mek.key }})
