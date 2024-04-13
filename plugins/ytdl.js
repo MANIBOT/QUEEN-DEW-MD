@@ -56,12 +56,14 @@ if (!q) return reply('*Please give me quary to download*')
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `_*⬇️QUEEN DEW VIDEO DOWNLOADER⬇️*_
+const cap = `*⬇️QUEEN DEW VIDEO DOWNLOADER⬇️*
+*🫧Title:* ${anu.title}
+*❄️Views:* ${anu.views}
+*🎯Duration:* ${anu.timestamp}
 
-*📃 Title:* ${anu.title}
-*📺 Views:* ${anu.views}
-*🕹️ Duration:* ${anu.timestamp}
-*🔗 Url:* ${anu.url}`
+*🪄Url:* ${anu.url}
+
+*Qᴜᴇᴇɴ ᴅᴇᴡ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ*`
 await conn.sendMessage(from, { image: { url: anu.thumbnail }, caption: cap}, { quoted: mek })
 const yt = await dl.youtubedl(anu.url).catch(async () => await dl.youtubedlv2(anu.url)) 
 const yt2 = await dl.youtubedlv2(anu.url)
@@ -96,12 +98,14 @@ if (!q) return reply('*Please give me quary to download*')
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `_*⬇️QUEEN DEW AUDIO DOWNLOADER⬇️*_
+const cap = `*⬇️QUEEN DEW AUDIO DOWNLOADER⬇️*
+*🫧Title:* ${anu.title}
+*❄️Views:* ${anu.views}
+*🎯Duration:* ${anu.timestamp}
 
-*📃 Title:* ${anu.title}
-*📺 Views:* ${anu.views}
-*🕹️ Duration:* ${anu.timestamp}
-*🔗 Url:* ${anu.url}`
+*🪄Url:* ${anu.url}
+
+*Qᴜᴇᴇɴ ᴅᴇᴡ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ*`
 await conn.sendMessage(from, { image: { url: anu.thumbnail }, caption: cap}, { quoted: mek })
 let infoYt = await ytdl.getInfo(anu.url);
 if (infoYt.videoDetails.lengthSeconds >= videotime) {
