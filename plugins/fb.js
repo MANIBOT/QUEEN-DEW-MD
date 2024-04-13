@@ -17,16 +17,11 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sen
 try{
 if (!q) return await  reply(needus)
 let response = await fetchJson('https://rossy-dl-api.vercel.app/api/downloads/facebook?url='+q)
-await conn.sendMessage(from, { image: { url: data.thumb }, caption: dat }, { quoted: mek })
-if(data.url[1]){
-await conn.sendMessage(from, { video: { url: data.url[0].url }, caption: '*'+data.url[0].subname+' VIDEO*'}, { quoted: mek })
-await conn.sendMessage(from, { video: { url: data.url[1].url }, caption: '*'+data.url[1].subname+' VIDEO*'}, { quoted: mek })
-} else {
-await conn.sendMessage(from, { video: { url: data.url[0].url }, caption: '*SD VIDEO*'}, { quoted: mek })
-}
+await conn.sendMessage(from, { video: { url: response.result.video_hd }, caption: "QUEEN DEW MD\n\n*☘️ Quality SD*" }, { quoted: mek })
+await conn.sendMessage(from, { video: { url: response.result.video_sd }, caption: "QUEEN DEW MD\n\n*☘️ Quality HD*" }, { quoted: mek })
 } catch (e) {
-reply('*Error !!*')
-l(e)
+reply(cantf)
+console.log(e)
 }
 })
   
