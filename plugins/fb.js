@@ -17,10 +17,8 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sen
 try{
 if (!q) return await  reply(needus)
 let response = await fetchJson('https://rossy-dl-api.vercel.app/api/downloads/facebook?url='+q)
-let wm = '> QUEEN DEW \n*☘️ Quality SD*'
-let wmhd = '> QUEEN DEW \n*☘️ Quality HD*'
-await conn.sendMessage(from, { video: { url: response.result.video_hd }, caption: wmhd}, { quoted: mek })
-await conn.sendMessage(from, { video: { url: response.result.video_sd }, caption: wm}, { quoted: mek })
+await conn.sendMessage(from, { video: { url: response.result.video_hd }, caption: "> QUEEN DEW \n\n*☘️ Quality SD*" }, { quoted: mek })
+await conn.sendMessage(from, { video: { url: response.result.video_sd }, caption: "> QUEEN DEW \n\n*☘️ Quality HD*" }, { quoted: mek })
 } catch (e) {
 reply(cantf)
 console.log(e)
