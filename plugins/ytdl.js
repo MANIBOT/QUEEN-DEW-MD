@@ -128,7 +128,7 @@ if (fileSizeInMegabytes <= config.MAX_SIZE) {
 await conn.sendMessage(from, { react: { text: '✔️', key: mek.key }})
 return fs.unlinkSync(`./${randomName}`);
 } else {
-reply(lang.SIZE);
+reply("SIZE BIG");
 }
 fs.unlinkSync(`./${randomName}`);
 } catch (e) {
