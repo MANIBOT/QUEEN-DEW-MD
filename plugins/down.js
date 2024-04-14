@@ -1,8 +1,7 @@
 const config = require('../config')
 const fg = require('api-dylux');
 const l = console.log
-const { cmd, commands } = require('../command')
-const dl = require('@bochilteam/scraper')  
+const { cmd, commands } = require('../command')  
 const ytdl = require('youtubedl-core');
 const fs = require('fs-extra')
 
