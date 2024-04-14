@@ -1,5 +1,7 @@
 const config = require('../config');
 const { cmd, commands } = require('../command')
+const fbdl = require("fbdl-core");
+const fs = require("fs");
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
 var needus = "*Please give me facebook url* !!" 
